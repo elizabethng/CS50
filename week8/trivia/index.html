@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>
+                    What is the hardest climbing route that has been climbed?
+                </h3>
+                <button id="change">Change</button>
+                <button id="vasil">Vasil Vasil</button>
+                <button id="dna">DNA</button>
+                <button id="silence">Silence</button>
+                <button id="ladura">La Dura Dura</button>
+                <div id="p1answer">
+                </div>
+                <!-- TODO: Add multiple choice question here -->
+                <script>
+                    let p1answer = document.querySelector('#p1answer');
+                    let buttons = document.querySelectorAll('button');
+                    buttons.forEach(function(button) {
+                        button.addEventListener('click', function() {
+                            if (button.id == 'silence') {
+                                button.style.backgroundColor = 'green';
+                                p1answer.innerText = 'Correct!';
+                            } else {
+                                button.style.backgroundColor = 'red';
+                                p1answer.innerText = 'Incorrect';
+                            }
+                        })
+                    })
+                </script>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>
+                    What country is located in?
+                </h3>
+                <input id="response" type="text">
+                <button id="check">Check Answer</button>
+                <div id="p2answer">
+                </div>
+                <!-- TODO: Add free response question here -->
+                <script>
+                    let check = document.querySelector('#check');
+                    let response = document.querySelector('#response');
+                    let p2answer = document.querySelector('#p2answer');
+                    check.addEventListener('click', function() {
+                        if (response.value == 'Norway') {
+                            response.style.backgroundColor = 'green';
+                            p2answer.innerText = 'Correct!';
+                        } else {
+                            response.style.backgroundColor = 'red';
+                            p2answer.innerText = 'Incorrect';
+                        }
+                    })
+                </script>
+            </div>
+        </div>
+    </body>
+
+</html>

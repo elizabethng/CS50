@@ -1,0 +1,20 @@
+Suppose Spotify determines an audio aura by looking at the average
+energy, valence, and danceability of a person’s top 100 songs from the past year.
+
+Query
+SELECT
+  AVG(energy),
+  AVG(valence),
+  AVG(danceability)
+FROM
+  songs;
+
++-------------+--------------+-------------------+
+| AVG(energy) | AVG(valence) | AVG(danceability) |
++-------------+--------------+-------------------+
+| 0.65906     | 0.484443     | 0.71646           |
++-------------+--------------+-------------------+
+
+This person's music is highly danceable and energetic.
+You could use a median or perhaps look at all their songs
+for the year to get a better aura index.
