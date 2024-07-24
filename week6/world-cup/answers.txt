@@ -1,0 +1,21 @@
+Times:
+
+10 simulations: 0m0.030s
+100 simulations: 0m0.024s
+1000 simulations: 0m0.056s
+10000 simulations: 0m0.119s
+100000 simulations: 0m0.784s
+1000000 simulations: 0m7.286s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+It appears that there is a less than linear increase in run time with N, it is faster than
+expected based on s/run from the initial N = 10 simulations.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+1000 simulations seems to strike a good balance between some certainty about the order
+of the placements and also stability in the point estimates of the probabilies. 
