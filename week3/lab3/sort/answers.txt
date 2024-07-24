@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: sorted list is much faster for a given n, and reversed is much longer.
+
+sort2 uses: merge sort
+
+How do you know?: it has the fastest times and they are all about the same for a given n
+
+sort3 uses: selection sort
+
+How do you know?: times for a given n are relatively similary but it is slower thant sort2

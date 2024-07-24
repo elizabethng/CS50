@@ -1,0 +1,12 @@
+sorted
+real	0m0.002s
+real	0m0.003s
+real	0m0.012s
+random
+real	0m0.003s
+real	0m0.004s
+real	0m0.020s
+reversed
+real	0m0.002s
+real	0m0.003s
+real	0m0.012s

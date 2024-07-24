@@ -1,0 +1,27 @@
+need to iterate through the guess and the choice word
+capture exact matches and close matches
+
+guess:  least
+choice: great
+
+1 match (t)
+2 close (e, a)
+
+for i in 1:length(word)
+    is l the same as g?
+        no, so see if it occurs elsewhere
+            is l the same as g?
+            is l the same as r?
+            ...
+            is l the same as t?
+            so no scores are added
+    is e the same as r?
+        no, so see if it occurs elsewhere
+            is e the same as g?
+            ...
+            is e the same as e?
+                yes, so add to score and go to next guess letter
+                [not sure how we're handling duplicates]
+    ...
+    is t the same as t?
+        yes, add to score and go to the next letter in guess
